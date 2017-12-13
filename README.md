@@ -10,11 +10,21 @@ tests with web frontend apps.
 
 ## Installation
 
-Install nodejs and npm. I recommend using [`nvm`](https://github.com/creationix/nvm)
-or [`asdf`](https://github.com/HashNuke/asdf) for managing
-node version installations, but feel free to install it
-from source or use a package manager like `brew`.
+Install nodejs and npm. I recommend using [`n`](https://github.com/tj/n)
+for managing node version installations, but feel free to install it
+from source or use a package manager like `brew`. This should work for
+most versions of nodejs including the latest (9).
 
-Once nodejs is installed, run `npm install` to install the
+Install [`yarn`](https://yarnpkg.com/en/) with `brew install yarn`.
+
+Once nodejs is installed, run `yarn install` to install the
 dependencies for the projects. Now you're ready to start
 testing.
+
+## Development and Testing
+You can start the app with `yarn start`. Then you can access the calculator
+on localhost:3000.
+
+You can run the tests with `yarn test`. This will display the output of the
+tests in the command line and create a coverage report in the `coverage`
+directory.

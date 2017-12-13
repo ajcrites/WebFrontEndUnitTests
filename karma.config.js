@@ -30,7 +30,7 @@ module.exports = config => config.set({
         "bootstrap-tests.js": ["babel"],
         "ngculator/ngculator.js": ["babel"],
         "ngculator/ngculator.test.js": ["babel"],
-        "ngculator/**/*.js": ["babel"],
+        "ngculator/**/*.js": ["coverage", "babel"],
         "ngculator/**/*.test.js": ["babel"],
     },
     ngHtml2JsPreprocessor: {
